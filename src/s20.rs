@@ -13,10 +13,6 @@ impl Solution {
 
         for ch in s.chars() {
             if map.contains_key(&ch) {
-                if stk.is_empty() {
-                    return false;
-                }
-
                 if !stk.is_empty() && map.get(&ch).unwrap().eq(&stk.last().unwrap()) {
                     stk.pop();
                 } else {

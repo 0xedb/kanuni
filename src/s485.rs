@@ -8,11 +8,8 @@ impl Solution {
         for i in nums {
             if i == 1 {
                 count += 1;
-            }
-
-            max = max.max(count);
-
-            if i != 1 {
+                max = max.max(count);
+            } else if count != 0 {
                 count = 0
             }
         }
@@ -29,7 +26,13 @@ mod tests {
     fn check() {
         assert_eq!(Solution::find_max_consecutive_ones(vec![4]), 0);
         assert_eq!(Solution::find_max_consecutive_ones(vec![1]), 1);
-        assert_eq!(Solution::find_max_consecutive_ones(vec![1,1,0,1,1,1]), 3);
-        assert_eq!(Solution::find_max_consecutive_ones(vec![1,0,1,1,0,1]), 2);
+        assert_eq!(
+            Solution::find_max_consecutive_ones(vec![1, 1, 0, 1, 1, 1]),
+            3
+        );
+        assert_eq!(
+            Solution::find_max_consecutive_ones(vec![1, 0, 1, 1, 0, 1]),
+            2
+        );
     }
 }

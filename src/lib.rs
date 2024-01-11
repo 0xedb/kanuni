@@ -9,3 +9,4 @@ mod s1025;
 mod s1295;
 mod s2351;
 mod s1929;
+mod s1748;

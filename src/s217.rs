@@ -5,17 +5,14 @@ impl Solution {
         let mut hs = std::collections::HashSet::with_capacity(nums.len());
 
         for i in nums {
-            if hs.contains(&i) {
+            if !hs.insert(i) {
                 return true;
             }
-
-            hs.insert(i);
         }
 
         false
     }
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -23,8 +20,11 @@ mod tests {
 
     #[test]
     fn check() {
-        assert_eq!(Solution::contains_duplicate(vec![1,2,3,1]), true);
-        assert_eq!(Solution::contains_duplicate(vec![1,2,3,4]), false);
-        assert_eq!(Solution::contains_duplicate(vec![1,1,1,3,3,4,3,2,4,2]), true);
+        assert_eq!(Solution::contains_duplicate(vec![1, 2, 3, 1]), true);
+        assert_eq!(Solution::contains_duplicate(vec![1, 2, 3, 4]), false);
+        assert_eq!(
+            Solution::contains_duplicate(vec![1, 1, 1, 3, 3, 4, 3, 2, 4, 2]),
+            true
+        );
     }
 }

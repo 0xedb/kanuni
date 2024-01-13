@@ -5,6 +5,7 @@ mod s20;
 mod s35;
 mod s402;
 mod s485;
+mod s217;
 mod s977;
 mod s1025;
 mod s1295;

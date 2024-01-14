@@ -3,6 +3,7 @@ mod s1;
 mod s9;
 mod s20;
 mod s35;
+mod s94;
 mod s402;
 mod s485;
 mod s217;

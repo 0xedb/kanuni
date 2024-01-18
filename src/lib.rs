@@ -5,6 +5,7 @@ mod s20;
 mod s35;
 mod s94;
 mod s344;
+mod s242;
 mod s145;
 mod s144;
 mod s402;

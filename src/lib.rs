@@ -15,6 +15,7 @@ mod s485;
 mod s217;
 mod s977;
 mod s2418;
+mod s1550;
 mod s1025;
 mod s1295;
 mod s2351;

@@ -24,3 +24,4 @@ mod s2351;
 mod s1929;
 mod s1748;
 mod s2404;
+mod s1636;

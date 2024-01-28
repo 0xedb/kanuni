@@ -8,12 +8,14 @@ impl Solution {
 
         while i < j {
             if nums[i] == 0 {
-                
                 i += 1;
+                k += 1;
             } else if nums[i] == 2 {
+                nums.swap(i, j);
                 j -= 1;
             } else {
                 i += 1;
+                nums.swap(i, k);
             }
         }
     }

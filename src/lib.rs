@@ -13,6 +13,7 @@ mod s476;
 mod s100;
 mod s101;
 mod s145;
+mod s345;
 mod s144;
 mod s402;
 mod s485;
